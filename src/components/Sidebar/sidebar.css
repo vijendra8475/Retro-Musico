@@ -1,0 +1,16 @@
+.sidebar{
+    background-color: #19181E;
+    padding: 5vh;
+}
+.sideBar-area{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom: 5vh;
+}
+.option{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}

@@ -1,0 +1,10 @@
+p{
+    padding: 5px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

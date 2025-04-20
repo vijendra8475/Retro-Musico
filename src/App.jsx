@@ -1,34 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from 'react'
+import Nav from './components/Nav/Nav'
+import Sidebar from './components/Sidebar/Sidebar';
+import './app.css'
+import Poster from './components/Poster/Poster';
+import Music from './components/Music/Music';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [blackMode, setBlackMode] = useState(true)
+  const [theme, setTheme] = useState('black');
+  const [textColor, setTextColor] = useState('aliceblue')
+
+  const modeChanger = () => {
+    setBlackMode(!blackMode);
+  }
+    useEffect(() => {
+      if(blackMode) {
+        setTextColor('aliceblue');
+        setTheme('#040404');
+      }
+      else {
+        setTextColor('#040404');
+        setTheme('aliceblue');
+      }                                 
+    }, [blackMode])
+    
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='app' style={{ color: textColor, backgroundColor: theme }}>
+      <Sidebar theme={theme} />
+      
+      <div className="main" style={{width : '100%'}}>
+          <Nav modeChanger={modeChanger} textColor={textColor} theme={theme} />
+          <Poster />
+          
+          <Music />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 

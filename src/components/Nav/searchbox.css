@@ -1,0 +1,16 @@
+.searchbox{
+    padding: 10px 18px;
+    /* border: 2px solid ; */
+    border-radius:5px;
+    display: flex;align-items: center;justify-content: space-between;
+    gap: 12px;
+}
+.searchbox input{
+    outline: none;
+    border: none;
+    background-color: inherit;
+    color: inherit;
+}
+.searchbox input::placeholder{
+    font-size: 16px;
+}
