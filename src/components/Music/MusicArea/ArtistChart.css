@@ -1,0 +1,64 @@
+.ArtistChart {
+    padding: 20px;
+    padding-bottom: 5px;
+}
+
+.artist_song {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.artist_song:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 0  0 20px;
+}
+
+.left > img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.left > span {
+    min-width: 25px;
+}
+
+.left > div > h4 {
+    margin: 5px 0 0;
+    color: #888;
+    font-weight: 600;
+}
+
+.left > div > p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-size: 16px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right > i {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.right > i:hover {
+    color: #1db954;
+}

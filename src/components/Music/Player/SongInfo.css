@@ -1,0 +1,11 @@
+.SongInfo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 0  35px 0
+}
+.SongInfo>img{
+    border-radius: 6px;
+    width: 50%;
+}

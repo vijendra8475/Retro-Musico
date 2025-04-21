@@ -4,7 +4,7 @@ import Player from './Player/Player'
 
 const Music = () => {
   return (
-    <div style={{display:'flex', width:'100%', alignItems:'flex-start',padding:'1%'}}>
+    <div style={{display:'flex', width:'100%', alignItems:'flex-start',padding:'1%',gap:'20px'}}>
         <Musics />
         <Player />
     </div>

@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 .app{
     display: flex;
@@ -8,5 +9,5 @@
 }
 .main{
     width: 80%;
-    padding: 2vh;
+    padding: 2vh 2vh 0 2vh;
 }

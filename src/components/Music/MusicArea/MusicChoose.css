@@ -1,5 +1,8 @@
 .choice{
-    width: 40%;
-    background-color: #211F27;
-    padding: 10px;
+    max-width: 100%;
+    /* padding: 10px; */
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }

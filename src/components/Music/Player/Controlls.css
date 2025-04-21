@@ -1,0 +1,41 @@
+.controlls>.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bottom>p{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    bottom: 5px;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+.top-center{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.controlls{
+    background-color: #5772FF;
+    padding: 5%;
+    padding-bottom: 2%;
+}
+.top i{
+    font-size: 20px;
+}
+.top-center>i{
+    font-size: 210%;
+}
+.play-pause{
+    padding: 10px;
+    border-radius: 17px;
+    background: aliceblue;
+    color:#5772FF;
+}

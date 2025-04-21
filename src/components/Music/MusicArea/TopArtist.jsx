@@ -1,6 +1,7 @@
 import React from 'react'
 import ArtistCard from './ArtistCard';
 import './TopArtist.css'
+import CardTop from './CardTop';
 
 const TopArtist = () => {
     const topArtists = [
@@ -37,11 +38,8 @@ const TopArtist = () => {
     ];
   return (
     <div className='TopArtist'>
-        <div className="header">
-            <div className="left">Top Artist</div>
-            <div className="see-all">See All</div>
-        </div>
-
+        
+        <CardTop left={'Top Artist'} right={'See All'} />
         <div className="artists">
             {
                 topArtists.map((ele,idx) => {

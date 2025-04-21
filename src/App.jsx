@@ -30,7 +30,7 @@ function App() {
     <div className='app' style={{ color: textColor, backgroundColor: theme }}>
       <Sidebar theme={theme} />
       
-      <div className="main" style={{width : '100%'}}>
+      <div className="main" style={{width : '100%',boxSizing:'border-box'}}>
           <Nav modeChanger={modeChanger} textColor={textColor} theme={theme} />
           <Poster />
           

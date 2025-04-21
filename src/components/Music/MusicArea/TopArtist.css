@@ -1,17 +1,12 @@
 .TopArtist{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    justify-content: space-between;
     flex-direction: column;
     gap: 20px;
     background-color: rgb(33, 31, 39);
     padding: 30px 20px;
-    border-radius: 20px;
-}
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    border-radius: 5px;
 }
 .artists{
     display: flex;
@@ -19,13 +14,4 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-}
-.left{
-    font-weight: 600;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.see-all{
-    font-size: 12px;
-    font-weight: 600;
-    color: #a2a2a2;
 }

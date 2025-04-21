@@ -1,0 +1,15 @@
+.left{
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.see-all{
+    font-size: 12px;
+    font-weight: 600;
+    color: #a2a2a2;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
