@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './sidebar.css'
 import SidebarOption from './SidebarOption';
+import LogoSection from './LogoSection';
 
     let options = [
         {
@@ -91,6 +92,7 @@ const Sidebar = ({theme}) => {
 
   return (
     <div className='sidebar' style={{width:'20%', height:'100%',backgroundColor:bgColor, color : color }}>
+        <LogoSection />
         {
             options.map((ele,id) => {
                 return (
